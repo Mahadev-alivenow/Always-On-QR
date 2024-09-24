@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    html{
+        scroll-behavior: smooth;
+    }
+}
+
+.bg-cover {
+    background-size: cover;
+    height: 150%;
+    width: 100%;
+}
+/* index.css or a specific CSS file for the slider */
+.slider-container {
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  /* Add more styles as needed */
+}
+.slider-card{
+  display: -webkit-box;
+  width: 100%;
+  overflow-x: scroll;
+
+}
+.buttonSelected{
+      border-width: medium;
+    border-color: black;
+    background-color: deepskyblue;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.inputWrapper {
+    margin: "20px 0";
+    display: "flex";
+    justifyContent: "space-between";
+    width: "100%";
+  }
+.inputBox {
+    flexGrow: 1;
+    marginRight: 20;
+  };
