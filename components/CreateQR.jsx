@@ -169,13 +169,12 @@ export default function CreateQR() {
             />
             {!isValid && InputValue.url !== "" && (
               <>
-              
-              <p className="text-red-800 font-medium text-sm pt-2">
-                {errorMessage} 
-              </p>
-              <p className="text-red-800 font-medium text-sm pt-0">
-                 {"like https://example.com"}
-              </p>
+                <p className="text-red-800 font-medium text-sm pt-2">
+                  {errorMessage}
+                </p>
+                <p className="text-red-800 font-medium text-sm pt-0">
+                  example: &quot;https://example.com&quot;
+                </p>
               </>
             )}
             {/* {!isValid && InputValue.url !== "" && (
