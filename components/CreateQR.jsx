@@ -174,7 +174,7 @@ export default function CreateQR() {
                 {errorMessage} 
               </p>
               <p className="text-red-800 font-medium text-sm pt-0">
-                 {"example:https://example.com"}
+                 {"like https://example.com"}
               </p>
               </>
             )}
