@@ -173,7 +173,7 @@ export default function CreateQR() {
                   {errorMessage}
                 </p>
                 <p className="text-red-800 font-medium text-sm pt-0">
-                  example: &quot;https://example.com&quot;
+                  example: 'https://example.com'
                 </p>
               </>
             )}
