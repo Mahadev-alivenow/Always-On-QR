@@ -173,9 +173,9 @@ export default function CreateQR() {
                 <p className="text-red-800 font-medium text-sm pt-2">
                   {errorMessage}
                 </p>
-                <p className="text-red-800 font-medium text-sm pt-0">
+                {/* <p className="text-red-800 font-medium text-sm pt-0">
                   example: "{urlExample}"
-                </p>
+                </p> */}
               </>
             )}
             {/* {!isValid && InputValue.url !== "" && (
