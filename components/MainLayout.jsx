@@ -82,12 +82,12 @@ function MainLayout({ children }) {
             </a>
             <ul className="md:hidden flex w-full justify-evenly items-center font-customB">
               <li className="w-full" onClick={handleMenuClick}>
-                <button className="w-full text-blue-800 hover:bg-blue-800 hover:text-white hover:rounded-xl px-4 py-3  text-xl">
+                <button className="w-full text-customBlue hover:bg-customBlue hover:text-white hover:rounded-xl px-4 py-3  text-xl">
                   Sign In
                 </button>
               </li>
               <li className="w-full" onClick={handleMenuClick}>
-                <button className="w-full text-blue-800 hover:bg-blue-800 hover:text-white hover:rounded-xl px-4 py-3 text-xl ">
+                <button className="w-full text-customBlue hover:bg-customBlue hover:text-white hover:rounded-xl px-4 py-3 text-xl ">
                   Sign Up
                 </button>
               </li>
@@ -106,10 +106,10 @@ function MainLayout({ children }) {
           </ul>
         </nav>
         <div className="hidden md:flex md:justify-between md:-space-x-4 md:w-fit md:mx-0 font-customB font-bold ">
-          <button className="text-blue-800 hover:bg-blue-800 hover:text-white hover:rounded-xl px-6  py-3  text-xl">
+          <button className="text-customBlue hover:bg-customBlue hover:text-white hover:rounded-xl px-6  py-3  text-xl">
             Sign In
           </button>
-          <button className="text-blue-800 hover:bg-blue-800 hover:text-white hover:rounded-xl px-6  py-3 text-xl ">
+          <button className="text-customBlue hover:bg-customBlue hover:text-white hover:rounded-xl px-6  py-3 text-xl ">
             Sign Up
           </button>
         </div>
