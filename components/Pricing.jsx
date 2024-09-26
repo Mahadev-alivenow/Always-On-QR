@@ -175,7 +175,7 @@ export default function Pricing() {
                 alt="Icon04"
                 width={30} // Reduced icon size for small screens
               />
-              <p className="w-[60%] text-left font-customR text-[15px]">
+              <p className="w-[100px] text-left font-customR text-[15px]">
                 Unlimited QR Scans
               </p>
             </div>
@@ -189,7 +189,7 @@ export default function Pricing() {
             />
             <div className="absolute left-[33px] top-[10px] flex items-center">
               <img src="/images/Icon04.png" alt="Icon04" width={30} />
-              <p className="w-[60%] text-left font-customR text-[15px]">
+              <p className="w-[100px] text-left font-customR text-[15px]">
                 SVG & PNG Formats
               </p>
             </div>
@@ -203,7 +203,7 @@ export default function Pricing() {
             />
             <div className="absolute left-[33px] top-[10px] flex items-center">
               <img src="/images/Icon04.png" alt="Icon04" width={30} />
-              <p className="w-[60%] text-left font-customR text-[15px]">
+              <p className="w-[100px] text-left font-customR text-[15px]">
                 Dynamic QR Codes
               </p>
             </div>
@@ -217,7 +217,7 @@ export default function Pricing() {
             />
             <div className="absolute left-[33px] top-[10px] flex items-center">
               <img src="/images/Icon04.png" alt="Icon04" width={30} />
-              <p className="w-[60%] text-left font-customR text-[15px]">
+              <p className="w-[100px] text-left font-customR text-[15px]">
                 QR Scan Analytics
               </p>
             </div>
