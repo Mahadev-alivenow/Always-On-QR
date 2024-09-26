@@ -59,7 +59,7 @@ function HomePage() {
       {/* <MainLayout>
         
       </MainLayout> */}
-      <div className="mt-0 pt-28 flex justify-center flex-col items-center ">
+      <div className="mt-0 pt-28 flex justify-center flex-col items-center  ">
         <Features />
         <PartnerLogos />
         <WhyQR />

@@ -169,7 +169,7 @@ export default function Pricing() {
               alt="PriceBG"
               className="w-full h-[80px] object-cover" // Reduced height for small screens
             />
-            <div className="absolute left-[35px] top-[10px] flex items-center">
+            <div className="absolute left-[33px] top-[10px] flex items-center">
               <img
                 src="/images/Icon04.png"
                 alt="Icon04"
@@ -187,7 +187,7 @@ export default function Pricing() {
               alt="PriceBG"
               className="w-full h-[80px] object-cover"
             />
-            <div className="absolute left-[35px] top-[10px] flex items-center">
+            <div className="absolute left-[33px] top-[10px] flex items-center">
               <img src="/images/Icon04.png" alt="Icon04" width={30} />
               <p className="w-[60%] text-left font-customR text-[15px]">
                 SVG & PNG Formats
@@ -201,7 +201,7 @@ export default function Pricing() {
               alt="PriceBG"
               className="w-full h-[80px] object-cover"
             />
-            <div className="absolute left-[35px] top-[10px] flex items-center">
+            <div className="absolute left-[33px] top-[10px] flex items-center">
               <img src="/images/Icon04.png" alt="Icon04" width={30} />
               <p className="w-[60%] text-left font-customR text-[15px]">
                 Dynamic QR Codes
@@ -215,7 +215,7 @@ export default function Pricing() {
               alt="PriceBG"
               className="w-full h-[80px] object-cover"
             />
-            <div className="absolute left-[35px] top-[10px] flex items-center">
+            <div className="absolute left-[33px] top-[10px] flex items-center">
               <img src="/images/Icon04.png" alt="Icon04" width={30} />
               <p className="w-[60%] text-left font-customR text-[15px]">
                 QR Scan Analytics

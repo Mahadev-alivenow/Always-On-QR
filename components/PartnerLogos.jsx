@@ -74,11 +74,11 @@ export default function PartnerLogos() {
           className="bg-cover absolute z-[-1]"
         />
         <div className="flex items-center text-center flex-col py-14 m-12 font-customB">
-          <div className="text-4xl sm:text-6xl font-extrabold text-white flex flex-col md:flex-row md:text-5xl lg:text-7xl md:space-x-2">
+          <div className="text-[34px]  leading-[34px] md:leading-normal  sm:text-6xl font-bold  text-white flex flex-col md:flex-row md:text-5xl lg:text-7xl md:space-x-2">
             <p>Create, Edit,</p>
             <p>Track & Manage</p>
           </div>
-          <div className="text-4xl sm:text-6xl font-extrabold text-white flex flex-col md:flex-row md:text-5xl lg:text-7xl md:space-x-2">
+          <div className="text-[34px] leading-[34px] md:leading-normal sm:text-6xl font-bold  text-white flex flex-col md:flex-row md:text-5xl lg:text-7xl md:space-x-2">
             <p>alwaysOnQR</p>
             <p>Codes with Ease</p>
           </div>

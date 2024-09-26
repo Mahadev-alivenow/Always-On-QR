@@ -265,7 +265,7 @@ export default function CreateQR() {
                     src="/images/Icon05.png"
                     alt="Icon05"
                     width={360}
-                    className={` ${loading && "hidden"} p-20 `}
+                    className={` ${loading && "hidden"} p-12 md:p-20 `}
                   />
                 )}
               </div>
