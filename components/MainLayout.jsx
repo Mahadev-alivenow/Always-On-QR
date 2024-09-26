@@ -1,5 +1,5 @@
 "use client";
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import Link from "next/link";
 import Logo from "./Logo";
 import NavBar from "./NavBar";
@@ -8,17 +8,38 @@ import { QRCodeContext } from "@/store/QRCodeContext";
 
 function MainLayout({ children }) {
   const [toggle, setToggle] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
+  // Handle menu click toggle
   const handleMenuClick = () => {
     setToggle(!toggle);
-    console.log("menu clicked", toggle);
   };
+
+  // Scroll detection to add/remove classes
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setScrolled(scrollTop > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
-      <header className="fixed w-full flex items-center justify-between px-8 md:px:12 h-20 bg-white/50 z-50 backdrop-filter shadow-2xl backdrop-blur-sm ">
+      <header
+        className={`fixed w-full flex items-center justify-between px-8 md:px:12 h-20 z-50 ${
+          scrolled
+            ? "bg-white/50 backdrop-filter backdrop-blur-sm shadow-xl"
+            : "bg-transparent"
+        } transition-all duration-300`}
+      >
         <Logo />
-        <nav>
+        <nav className="">
           <button className="md:hidden" onClick={handleMenuClick}>
             {toggle ? (
               <X className="scale-150 static" />
@@ -30,14 +51,14 @@ function MainLayout({ children }) {
             toggle ? 'translate-x-full' : 'translate-x-0'
           }`} */}
           <ul
-            className={`absolute left-0 top-20 right-0 bg-black text-white min-h-screen space-y-4 p-8 font-semibold text-2xl text-center transform translate-x-0 md:relative md:flex md:min-h-0 md:space-y-0 md:space-x-3  md:p-0 md:translate-x-0 md:bg-transparent md:text-black md:font-normal md:text-base md:top-0 md:justify-center md:items-center ${
+            className={`absolute left-0 top-20 right-0 bg-black text-white min-h-screen space-y-4 p-8 font-customL text-xl font-light text-center transform translate-x-0 md:relative md:flex md:min-h-0 md:space-y-0 md:space-x-3  md:p-0 md:translate-x-0 md:bg-transparent md:text-black   md:top-0 md:justify-center md:items-center ${
               toggle ? "translate-x-0" : "translate-x-full"
             }`}
           >
-            <li></li>
+
             <a href="#features" className="">
               <li
-                className="w-full md:w-fit hover:bg-white hover:rounded-xl hover:text-black md:hover:rounded-xl  md:hover:text-white md:hover:bg-neutral-700 py-3 px-3 text-xl"
+                className="w-full md:w-fit hover:bg-white hover:rounded-xl hover:text-black md:hover:rounded-xl  md:hover:text-white md:hover:bg-neutral-700 py-3 px-3  "
                 onClick={handleMenuClick}
               >
                 Features
@@ -45,7 +66,7 @@ function MainLayout({ children }) {
             </a>
             <a href="#pricing" className="">
               <li
-                className="w-full md:w-fit hover:bg-white hover:rounded-xl hover:text-black md:hover:rounded-xl  md:hover:text-white md:hover:bg-neutral-700 py-3 px-3 text-xl"
+                className="w-full md:w-fit hover:bg-white hover:rounded-xl hover:text-black md:hover:rounded-xl  md:hover:text-white md:hover:bg-neutral-700 py-3 px-3 text-xl "
                 onClick={handleMenuClick}
               >
                 Pricing
@@ -53,13 +74,13 @@ function MainLayout({ children }) {
             </a>
             <a href="#contact" className="">
               <li
-                className="w-full md:w-fit hover:bg-white hover:rounded-xl hover:text-black md:hover:rounded-xl  md:hover:text-white md:hover:bg-neutral-700 py-3 px-3 text-xl"
+                className="w-full md:w-fit hover:bg-white hover:rounded-xl hover:text-black md:hover:rounded-xl  md:hover:text-white md:hover:bg-neutral-700 py-3 px-3 text-xl "
                 onClick={handleMenuClick}
               >
                 Contact Us
               </li>
             </a>
-            <ul className="md:hidden flex w-full justify-evenly items-center">
+            <ul className="md:hidden flex w-full justify-evenly items-center font-customB">
               <li className="w-full" onClick={handleMenuClick}>
                 <button className="w-full text-blue-800 hover:bg-blue-800 hover:text-white hover:rounded-xl px-4 py-3  text-xl">
                   Sign In
@@ -84,11 +105,11 @@ function MainLayout({ children }) {
         </div> */}
           </ul>
         </nav>
-        <div className="hidden md:flex md:-space-x-2 md:mx-0 md:px-4 ">
-          <button className="text-blue-800 hover:bg-blue-800 hover:text-white hover:rounded-xl px-4 py-3  text-xl">
+        <div className="hidden md:flex md:justify-between md:-space-x-4 md:w-fit md:mx-0 font-customB font-bold ">
+          <button className="text-blue-800 hover:bg-blue-800 hover:text-white hover:rounded-xl px-6  py-3  text-xl">
             Sign In
           </button>
-          <button className="text-blue-800 hover:bg-blue-800 hover:text-white hover:rounded-xl px-4 py-3 text-xl ">
+          <button className="text-blue-800 hover:bg-blue-800 hover:text-white hover:rounded-xl px-6  py-3 text-xl ">
             Sign Up
           </button>
         </div>

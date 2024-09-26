@@ -73,7 +73,7 @@ export default function PartnerLogos() {
           alt="BG02 image"
           className="bg-cover absolute z-[-1]"
         />
-        <div className="flex items-center text-center flex-col py-14 m-12">
+        <div className="flex items-center text-center flex-col py-14 m-12 font-customB">
           <div className="text-4xl sm:text-6xl font-extrabold text-white flex flex-col md:flex-row md:text-5xl lg:text-7xl md:space-x-2">
             <p>Create, Edit,</p>
             <p>Track & Manage</p>

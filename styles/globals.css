@@ -10,17 +10,17 @@
 
 @font-face {
   font-family: 'MB';
-  src: url('/fonts/Montserrat-Bold.otf') format('opentype');
+  src: url('/fonts/your-font1.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'ML';
-  src: url('/fonts/Montserrat-Light.otf') format('opentype');
+  src: url('/fonts/your-font2.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'MR';
-  src: url('/fonts/Montserrat-Regular.otf') format('opentype');
+  src: url('/fonts/your-font3.otf') format('opentype');
 }
 
 .bg-cover {
@@ -51,7 +51,7 @@
 .buttonSelected{
       border-width: medium;
     border-color: black;
-    background-color: whitesmoke;
+    background-color: deepskyblue;
 }
 .App {
   font-family: sans-serif;

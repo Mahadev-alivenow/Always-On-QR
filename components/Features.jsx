@@ -34,7 +34,7 @@ export default function Features() {
           //   top: "0px",
           // }}
         ></img>
-        <div className="text-6xl font-extrabold flex flex-col md:flex-row md:text-7xl md:space-x-2">
+        <div className="text-6xl font-extrabold flex flex-col md:flex-row md:text-7xl md:space-x-2 font-customB">
           <p>Generate</p>
           <p>& Publish</p>
         </div>
@@ -44,7 +44,7 @@ export default function Features() {
             alt="Bracket image"
             className="w-7 h-22  md:w-4 md:h-13"
           ></img>
-          <div className="text-6xl font-extrabold py-2 flex flex-col md:flex-row md:text-7xl  md:space-x-2 text-customBlue">
+          <div className="text-6xl font-extrabold py-2 flex flex-col md:flex-row md:text-7xl  md:space-x-2 text-customBlue font-customB">
             <p>Dynamic</p>
             <p>QR Codes</p>
           </div>
@@ -54,7 +54,7 @@ export default function Features() {
             className="scale-[-1] w-7 h-22  md:w-4 md:h-13"
           ></img>
         </div>
-        <div className="text-3xl font-thin text-gray-800 flex flex-col md:flex-row md:space-x-2">
+        <div className="text-2xl  text-gray-800 flex flex-col md:flex-row md:space-x-2 font-customL">
           <p>Change your QR code&apos;s</p>
           <p>destination on-the-fly!</p>
         </div>
