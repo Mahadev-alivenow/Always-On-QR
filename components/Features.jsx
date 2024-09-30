@@ -8,7 +8,7 @@ export default function Features() {
         id="features"
         className="sec1 show-animate mx-0 mt-2 mb-8  items-center flex flex-col justify-center text-center relative w-full  "
       >
-        <div className="bgimage top-[200px] left-[0px] w-[100%] h-[130vh] absolute overflow-hidden">
+        <div className="bgimage top-[-200px] left-[0px] w-[100%] h-[130vh] absolute overflow-hidden">
           <img
             src="/images/BG01.png"
             alt="BG01 image"
