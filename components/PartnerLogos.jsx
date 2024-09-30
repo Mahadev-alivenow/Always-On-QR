@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 
 export default function PartnerLogos() {
   return (
-    <div className="w-full pt-8">
+    <section className="sec3 w-full pt-8">
       <div className="flex justify-around items-center bg-white h-28 sm:h-40">
         <Marquee
           direction="left" // Move from left to right
@@ -75,15 +75,15 @@ export default function PartnerLogos() {
         />
         <div className="flex items-center text-center flex-col py-14 m-12 font-customB">
           <div className="text-[32px]  leading-[32px] md:leading-normal  sm:text-6xl font-bold  text-white flex flex-col md:flex-row md:text-5xl lg:text-7xl md:space-x-2">
-            <p>Create, Edit,</p>
-            <p>Track & Manage</p>
+            <p className="animate">Create, Edit,</p>
+            <p className="animate">Track & Manage</p>
           </div>
           <div className="text-[32px] leading-[32px] md:leading-normal sm:text-6xl font-bold  text-white flex flex-col md:flex-row md:text-5xl lg:text-7xl md:space-x-2">
-            <p>alwaysOnQR</p>
-            <p>Codes with Ease</p>
+            <p className="animate">alwaysOnQR</p>
+            <p className="animate">Codes with Ease</p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

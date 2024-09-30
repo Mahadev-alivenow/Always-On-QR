@@ -131,8 +131,8 @@ export default function CreateQR() {
   };
 
   return (
-    <div
-      className="relative rounded-xl backdrop-filter bg-white/5  shadow-2xl backdrop-blur-3xl mx-4 p-6 lg:p-16"
+    <section
+      className="sec2 relative rounded-xl backdrop-filter bg-white/5  shadow-2xl backdrop-blur-3xl mx-4 p-6 lg:p-16"
       style={{
         border: "2px solid rgba(255, 255, 255, 1)", // White stroke
         boxShadow: "inset 0 0 20px rgba(255, 255, 255, 0.8)", // Inner white glow
@@ -141,8 +141,8 @@ export default function CreateQR() {
       {/* Overlay for white color with 30% opacity */}
       <div className="absolute inset-0 bg-white opacity-30 z-[-1] pointer-events-none rounded-xl"></div>
 
-      <div className="grid md:grid-cols-2 md:place-content-between gap-2 md:gap-2 md:space-x-0">
-        <div className="leftQR-top order-2 text-3xl font-bold font-customB ">
+      <div className="grid md:grid-cols-2 md:place-content-between gap-2 md:gap-20 md:space-x-0">
+        <div className="animate leftQR-top order-2 text-3xl font-bold font-customB ">
           Enter Content
         </div>
         <div
@@ -150,7 +150,7 @@ export default function CreateQR() {
           style={{ marginLeft: 24 }}
         >
           <button
-            className={`px-4 sm:px-5 lg:px-5 py-1 rounded-3xl  ${
+            className={`animate px-4 sm:px-5 lg:px-5 py-1 rounded-3xl  ${
               InputValue.qrmode ? " bg-customBlue text-white " : " "
             }  md:w-1/2`}
             onClick={() => setInputValue({ ...InputValue, qrmode: true })}
@@ -158,7 +158,7 @@ export default function CreateQR() {
             Dynamic QR
           </button>
           <button
-            className={`px-4 sm:px-5 lg:px-5 py-1 rounded-3xl  ${
+            className={`animate px-4 sm:px-5 lg:px-5 py-1 rounded-3xl  ${
               !InputValue.qrmode ? " bg-customBlue text-white " : " "
             }  md:w-1/2`}
             onClick={() => setInputValue({ ...InputValue, qrmode: false })}
@@ -167,15 +167,15 @@ export default function CreateQR() {
           </button>
         </div>
       </div>
-      <div className="grid md:grid-cols-2 gap-2">
-        <div className="leftQR-top text-3xl font-bold">
+      <div className="grid md:grid-cols-2 md:gap-20 gap-2">
+        <div className="leftQR-top text-3xl font-bold ">
           <div className="mb-8 mt-4">
             <input
               type="url"
               value={InputValue.url}
               onChange={handleInputChange}
               placeholder="Enter URL"
-              className="p-3 pl-6 text-base font-normal shadow-lg rounded-xl w-full md:w-[70%] font-customL"
+              className="p-3 pl-6 text-base font-normal shadow-lg rounded-xl w-full md:w-[100%] font-customL"
             />
             {!isValid && InputValue.url !== "" && (
               <>
@@ -193,7 +193,9 @@ export default function CreateQR() {
               </p>
             )} */}
           </div>
-          <h2 className="font-medium text-lg py-2 font-customR">Dot Style</h2>
+          <h2 className="animate font-medium text-lg pt-0 pb-4 font-customR  ">
+            Dot Style
+          </h2>
           <div className="flex justify-start space-x-4 items-center md:justify-start sm:space-x-6 mb-8">
             {dotStylesImages.map((di, index) => (
               <Buttons
@@ -208,7 +210,7 @@ export default function CreateQR() {
               />
             ))}
           </div>
-          <h2 className="font-medium text-lg py-2 font-customR">
+          <h2 className="animate font-medium text-lg pt-0 pb-4 font-customR">
             Corner Style
           </h2>
           <div className="flex justify-start space-x-4 items-center mb-8">
@@ -225,9 +227,11 @@ export default function CreateQR() {
               />
             ))}
           </div>
-          <h2 className="font-medium text-lg py-2 font-customR">Custom Logo</h2>
+          <h2 className="animate font-medium text-lg pt-0 pb-4 font-customR">
+            Custom Logo
+          </h2>
           <div
-            className="flex items-center justify-between bg-white rounded-lg px-4 py-2 lg:py-4 font-extralight text-lg md:w-[80%] mb-4"
+            className="flex items-center justify-between bg-white rounded-lg px-4 py-2 lg:py-4 font-extralight text-lg md:w-[100%] mb-4"
             onClick={() => fileInputField.current.click()}
           >
             <input
@@ -236,13 +240,13 @@ export default function CreateQR() {
               accept="image/*"
               onChange={handleFileChange}
               placeholder="Add your logo"
-              className="rounded-lg px-2 py-2 w-full absolute font-normal font-customR text-gray-300"
+              className="rounded-lg px-2 py-2 w-full absolute font-normal  font-customR text-gray-300"
               hidden
             />
             <label
               htmlFor="file"
               className={`${
-                file ? "text-blue-700 font-medium font-customR" : ""
+                file ? "text-customBlue font-medium font-customR" : ""
               }`}
             >
               {!file ? "Add your logo" : file}
@@ -250,10 +254,10 @@ export default function CreateQR() {
             <img src="/images/AddLogo.png" alt="AddLogo" width={50} />
           </div>
         </div>
-        <div className="rightQR-top px-6 py-2 w-[90%]">
-          <div className="grid">
+        <div className="rightQR-top md:pl-6 md:pr-0 py-2 w-[100%]">
+          <div className="grid ">
             <div className="bg-white rounded-3xl mt-2 w-[280px] md:w-[100%] md:h-[360px] flex items-center justify-center">
-              <div className={`p-8`}>
+              <div className={`p-6 md:p-8 md:px-0 `}>
                 {/* <div className="mt-2 w-[280px] md:w-[100%]">
                   <LoadingAnimation />
                 </div> */}
@@ -273,7 +277,7 @@ export default function CreateQR() {
             <div className="flex flex-col my-4">
               <input
                 type="range"
-                className="transparent h-1.5   cursor-pointer appearance-none rounded-lg border-transparent bg-white mt-4"
+                className="transparent h-1.5 text-customBlue   cursor-pointer appearance-none rounded-lg border-transparent bg-white mt-4"
                 min="0"
                 max="10"
                 id="customRange2"
@@ -281,14 +285,14 @@ export default function CreateQR() {
               />
               <label
                 htmlFor="customRange2"
-                className="mt-2  text-neutral-700 dark:text-neutral-200 text-center font-customL"
+                className="animate mt-2  text-black dark:text-neutral-200 text-center font-customL "
               >
                 {sliderValue}x{sliderValue} px
               </label>
             </div>
             <button
               onClick={handleGenerateQR}
-              className={`w-full rounded-lg bg-custom-gradient hover:bg-blue-400  text-white py-6 font-customL ${
+              className={`animate w-full rounded-lg bg-custom-gradient hover:bg-blue-400  text-white py-6 font-customL ${
                 !isValid && "cursor-not-allowed"
               }`}
             >
@@ -297,6 +301,6 @@ export default function CreateQR() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -6,10 +6,13 @@ import React, { createContext, useEffect, useState } from "react";
 import Contact from "@/components/Contact";
 import PartnerLogos from "@/components/PartnerLogos";
 import WhyQR from "@/components/WhyQR";
+import "./globals.css";
+
 // import QRCode from "@/components/GenerateQRcode";
 // import QRGenerator from "@/components/GenerateQRNew";
 // import GenerateQR from "@/components/GenerateQR";
 import dynamic from "next/dynamic";
+import Document from "next/document";
 
 const QRCode = dynamic(() => import("@/components/GenerateQRcode"), {
   ssr: false,
@@ -17,7 +20,6 @@ const QRCode = dynamic(() => import("@/components/GenerateQRcode"), {
 const QRGenerator = dynamic(() => import("@/components/GenerateQRNew"), {
   ssr: false,
 });
-
 
 export const InputContext = createContext();
 function HomePage() {
@@ -54,6 +56,22 @@ function HomePage() {
       console.log("Client-side rendering only!");
     }
   }, []);
+  useEffect(() => {
+    // This will only run in the browser
+    let sections = document.querySelectorAll("section");
+    console.log(sections);
+    window.onscroll = () => {
+      sections.forEach((sec) => {
+        let scrollDistance = window.scrollY;
+        let secDistance = sec.offsetTop;
+
+        if (scrollDistance >= secDistance) {
+          sec.classList.add("show-animate");
+        }
+      });
+    };
+  }, []);
+
   return (
     <InputContext.Provider value={value}>
       {/* <MainLayout>

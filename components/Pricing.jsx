@@ -8,19 +8,19 @@ export default function Pricing() {
   return (
     <section
       id="pricing"
-      className="mx-0   items-center flex flex-col justify-center text-center my-16 w-full"
+      className="sec5 mx-0   items-center flex flex-col justify-center text-center my-16 w-full"
     >
       <img
         src="/images/BG03.png"
         alt="BG03 image"
-        className="bg-cover absolute z-[-1]  "
+        className="animate bg-cover absolute z-[-1]  "
       />
       <div className="relative flex justify-center text-center ">
-        <p className="text-4xl font-extrabold sm:text-6xl text-center text-white py-8 font-customB">
+        <p className="animate text-4xl font-extrabold sm:text-6xl text-center text-white py-8 font-customB">
           Plans & Prices
         </p>
       </div>
-      <div className="slider-card  md:hidden">
+      <div className="animate slider-card  md:hidden">
         <PriceCard
           image="/images/Icon01.png"
           plans="Starter"
@@ -46,7 +46,7 @@ export default function Pricing() {
           defaultHover={false}
         />
       </div>
-      <div className="hidden md:flex space-x-6">
+      <div className="animate hidden md:flex space-x-6">
         <PriceCardSlider
           image="/images/Icon01.png"
           plans="Starter"
@@ -74,150 +74,158 @@ export default function Pricing() {
       </div>
 
       <div className="allplansinclude py-8">
-        <h2 className="text-4xl pt-8 text-white font-medium font-customR">
+        <h2 className="animate text-4xl pt-8 text-white font-extrabold font-customB">
           All plans include:
         </h2>
       </div>
 
-      <div className="larger-screen hidden md:flex">
-        <div className="flex flex-wrap justify-between sm:justify-center lg:justify-between text-xl font-bold text-white">
-          {/* Each card as a flex container */}
-          <div className="flex flex-col relative w-[250px] mb-4 sm:mx-2">
+      <div className="larger-screen animate hidden md:flex md:-space-x-8">
+        <div className="w-[280px] p-0 m-0 relative overflow-hidden">
+          <img
+            src="/images/PriceBG.png"
+            alt="PriceBG"
+            width={320}
+            className=" p-0 m-0 object-cover absolute overflow-hidden"
+          />
+          <div className="left-0 top-[30px] absolute flex justify-center items-center w-full">
+            <img
+              src="/images/Icon04.png"
+              alt="Icon04"
+              width={60}
+              className="  "
+            />
+            <p className="w-[40%] text-xl text-left font-customR  text-white">
+              Unlimited QR Scans
+            </p>
+          </div>
+        </div>
+        <div className="w-[280px] p-0 m-0 relative overflow-hidden">
+          <img
+            src="/images/PriceBG.png"
+            alt="PriceBG"
+            className="w-full p-0 m-0 object-cover relative"
+          />
+          <div className="left-0 top-[30px] absolute flex justify-center items-center w-full">
+            <img
+              src="/images/Icon04.png"
+              alt="Icon04"
+              width={60}
+              className="  "
+            />
+            <p className="w-[40%] text-xl text-left font-customR  text-white">
+              SVG & PNG Formats
+            </p>
+          </div>
+        </div>
+        <div className="w-[280px] p-0 m-0 relative overflow-hidden">
+          <img
+            src="/images/PriceBG.png"
+            alt="PriceBG"
+            className="w-full p-0 m-0 object-cover relative"
+          />
+          <div className="left-0 top-[30px] absolute flex justify-center items-center w-full">
+            <img
+              src="/images/Icon04.png"
+              alt="Icon04"
+              width={60}
+              className="  "
+            />
+            <p className="w-[40%] text-xl text-left font-customR  text-white">
+              Dynamic QR Codes
+            </p>
+          </div>
+        </div>
+        <div className="w-[280px] p-0 m-0 relative overflow-hidden">
+          <img
+            src="/images/PriceBG.png"
+            alt="PriceBG"
+            className="w-full p-0 m-0 object-cover relative"
+          />
+          <div className="left-0 top-[30px] absolute flex justify-center items-center w-full">
+            <img
+              src="/images/Icon04.png"
+              alt="Icon04"
+              width={60}
+              className="  "
+            />
+            <p className="w-[40%] text-xl text-left font-customR  text-white">
+              QR Scan Analytics
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="small-screen animate flex flex-col md:hidden  justify-center items-center -space-y-6">
+        <div className="flex justify-center items-center -space-x-6">
+          <div className="w-[180px]  p-0 m-0 relative overflow-hidden">
             <img
               src="/images/PriceBG.png"
               alt="PriceBG"
-              className="w-full h-[160px] object-cover"
+              className="w-full p-0 m-0 object-cover relative"
             />
-            <div className="absolute left-[30px] top-[30px] flex items-center">
+            <div className="left-0 top-[20px] absolute flex justify-center items-center w-full">
               <img
                 src="/images/Icon04.png"
                 alt="Icon04"
-                width={60}
-                className=""
+                width={40}
+                className="  "
               />
-              <p className="w-[50%] text-left font-customR">
+              <p className="w-[40%] text-xs text-left font-customR  text-white">
                 Unlimited QR Scans
               </p>
             </div>
           </div>
-
-          <div className="flex flex-col relative w-[250px] mb-4 sm:mx-2">
+          <div className="w-[180px] p-0 m-0 relative overflow-hidden">
             <img
               src="/images/PriceBG.png"
               alt="PriceBG"
-              className="w-full h-[160px] object-cover"
+              className="w-full p-0 m-0 object-cover relative"
             />
-            <div className="absolute left-[30px] top-[30px] flex items-center">
+            <div className="left-0 top-[20px] absolute flex justify-center items-center w-full">
               <img
                 src="/images/Icon04.png"
                 alt="Icon04"
-                width={60}
-                className=""
+                width={40}
+                className="  "
               />
-              <p className="w-[50%] text-left font-customR">
+              <p className="w-[40%] text-xs text-left font-customR  text-white">
                 SVG & PNG Formats
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col relative w-[250px] mb-4 sm:mx-2">
-            <img
-              src="/images/PriceBG.png"
-              alt="PriceBG"
-              className="w-full h-[160px] object-cover"
-            />
-            <div className="absolute left-[30px] top-[30px] flex items-center">
-              <img
-                src="/images/Icon04.png"
-                alt="Icon04"
-                width={60}
-                className=""
-              />
-              <p className="w-[50%] text-left font-customR">Dynamic QR Codes</p>
-            </div>
-          </div>
-
-          <div className="flex flex-col relative w-[250px] mb-4 sm:mx-2">
-            <img
-              src="/images/PriceBG.png"
-              alt="PriceBG"
-              className="w-full h-[160px] object-cover"
-            />
-            <div className="absolute left-[30px] top-[30px] flex items-center">
-              <img
-                src="/images/Icon04.png"
-                alt="Icon04"
-                width={60}
-                className=""
-              />
-              <p className="w-[50%] text-left font-customR">
-                QR Scan Analytics
               </p>
             </div>
           </div>
         </div>
-      </div>
-      <div className="small-screen flex md:hidden">
-        <div className="flex flex-wrap justify-center  text-sm font-bold text-white">
-          {/* Each card as a flex item */}
-
-          <div className="flex flex-col relative w-[180px] ">
-            {" "}
-            {/* Adjust width for 2x2 layout */}
+        <div className="flex justify-center items-center -space-x-6">
+          <div className="w-[180px]  p-0 m-0 relative overflow-hidden">
             <img
               src="/images/PriceBG.png"
               alt="PriceBG"
-              className="w-full h-[80px] object-cover" // Reduced height for small screens
+              className="w-full p-0 m-0 object-cover relative"
             />
-            <div className="absolute left-[33px] top-[10px] flex items-center">
+            <div className="left-0 top-[20px] absolute flex justify-center items-center w-full">
               <img
                 src="/images/Icon04.png"
                 alt="Icon04"
-                width={30} // Reduced icon size for small screens
+                width={40}
+                className="  "
               />
-              <p className="w-[100px] text-left font-customR text-[15px]">
-                Unlimited QR Scans
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col relative w-[180px] ">
-            <img
-              src="/images/PriceBG.png"
-              alt="PriceBG"
-              className="w-full h-[80px] object-cover"
-            />
-            <div className="absolute left-[33px] top-[10px] flex items-center">
-              <img src="/images/Icon04.png" alt="Icon04" width={30} />
-              <p className="w-[100px] text-left font-customR text-[15px]">
-                SVG & PNG Formats
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col relative w-[180px] ">
-            <img
-              src="/images/PriceBG.png"
-              alt="PriceBG"
-              className="w-full h-[80px] object-cover"
-            />
-            <div className="absolute left-[33px] top-[10px] flex items-center">
-              <img src="/images/Icon04.png" alt="Icon04" width={30} />
-              <p className="w-[100px] text-left font-customR text-[15px]">
+              <p className="w-[40%] text-xs text-left font-customR  text-white">
                 Dynamic QR Codes
               </p>
             </div>
           </div>
-
-          <div className="flex flex-col relative w-[180px] ">
+          <div className="w-[180px] p-0 m-0 relative overflow-hidden">
             <img
               src="/images/PriceBG.png"
               alt="PriceBG"
-              className="w-full h-[80px] object-cover"
+              className="w-full p-0 m-0 object-cover relative"
             />
-            <div className="absolute left-[33px] top-[10px] flex items-center">
-              <img src="/images/Icon04.png" alt="Icon04" width={30} />
-              <p className="w-[100px] text-left font-customR text-[15px]">
+            <div className="left-0 top-[20px] absolute flex justify-center items-center w-full">
+              <img
+                src="/images/Icon04.png"
+                alt="Icon04"
+                width={40}
+                className="  "
+              />
+              <p className="w-[40%] text-xs text-left font-customR  text-white">
                 QR Scan Analytics
               </p>
             </div>

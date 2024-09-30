@@ -39,8 +39,8 @@ export default function PriceCard({
       <div
         className=" rounded-lg  backdrop-filter bg-white/10 w-[250px]  shadow-md backdrop-blur-md m-4 p-6"
         style={{
-          border: "2px solid rgba(255, 255, 255, 1)", // White stroke
-          boxShadow: "inset 0 0 20px rgba(255, 255, 255, .8)", // Inner white glow
+          border: "2px solid rgba(255, 255, 255, .8)", // White stroke
+          boxShadow: "inset 0 0 20px rgba(255, 255, 255, .6)", // Inner white glow
         }}
       >
         <div className="flex-col text-white  text-left font-customR   ">

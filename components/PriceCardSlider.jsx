@@ -12,8 +12,8 @@ export default function PriceCardSlider({
     <div
       className=" rounded-lg  backdrop-filter bg-white/10 w-full shadow-md backdrop-blur-md"
       style={{
-        border: "2px solid rgba(255, 255, 255, 1)", // White stroke
-        boxShadow: "inset 0 0 20px rgba(255, 255, 255, .8)", // Inner white glow
+        border: "2px solid rgba(255, 255, 255, .7)", // White stroke
+        boxShadow: "inset 0 0 20px rgba(255, 255, 255, .9)", // Inner white glow
       }}
     >
       {/* Overlay for white color with 30% opacity */}

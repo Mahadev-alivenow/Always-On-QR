@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {/* Add faviconsss */}
-        <link rel="icon" href="/Logo.svg" type="image/svg+xml" />
+        <link rel="icon" href="/images/FavIcon.png" type="image/png" />
         <meta name="description" content={metadata.description} />
         <title>{metadata.title}</title>
       </head>
