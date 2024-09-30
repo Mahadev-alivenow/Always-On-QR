@@ -12,7 +12,7 @@ import "./globals.css";
 // import QRGenerator from "@/components/GenerateQRNew";
 // import GenerateQR from "@/components/GenerateQR";
 import dynamic from "next/dynamic";
-import Document from "next/document";
+
 
 const QRCode = dynamic(() => import("@/components/GenerateQRcode"), {
   ssr: false,
