@@ -132,16 +132,16 @@ export default function CreateQR() {
 
   return (
     <section
-      className="sec2 relative rounded-xl backdrop-filter bg-white/5  shadow-2xl backdrop-blur-3xl mx-4 p-6 lg:p-16"
+      className="sec2 show-animate  relative rounded-xl backdrop-filter bg-white/5  shadow-2xl backdrop-blur-3xl mx-4 p-6 lg:p-16"
       style={{
         border: "2px solid rgba(255, 255, 255, 1)", // White stroke
         boxShadow: "inset 0 0 20px rgba(255, 255, 255, 0.8)", // Inner white glow
       }}
     >
       {/* Overlay for white color with 30% opacity */}
-      <div className="absolute inset-0 bg-white opacity-30 z-[-1] pointer-events-none rounded-xl"></div>
+      <div className=" absolute inset-0 bg-white opacity-30 z-[-1] pointer-events-none rounded-xl"></div>
 
-      <div className="grid md:grid-cols-2 md:place-content-between gap-2 md:gap-20 md:space-x-0">
+      <div className="animate grid md:grid-cols-2 md:place-content-between gap-2 md:gap-20 md:space-x-0">
         <div className="animate leftQR-top order-2 text-3xl font-bold font-customB ">
           Enter Content
         </div>

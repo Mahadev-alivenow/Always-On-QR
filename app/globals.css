@@ -68,15 +68,46 @@
     flexGrow: 1;
     marginRight: 20;
   };
-
-section .animate{
-  opacity: 0;
-  filter: blur(5px);
-  transition: 0.5s;
+/* Default styles for sections */
+section {
+    overflow: hidden;
 }
 
-section.show-animate .animate{
-  opacity: 1;
-  filter: blur(0px);
-  transition: 0.5s;
+/* Animation styles */
+section .animate {
+    opacity: 0;
+    filter: blur(5px);
+    transition: 0.5s;
 }
+
+/* Show animation styles */
+section.show-animate .animate {
+    opacity: 1;
+    filter: blur(0px);
+    transition: 0.5s;
+}
+
+/* Specific section animations */
+.sec6 .animate,
+.sec3 .animate,
+.sec5 .animate,
+.sec2 .animate {
+    transform: scale(0.7);
+}
+
+.sec6.show-animate .animate,
+.sec3.show-animate .animate,
+.sec5.show-animate .animate,
+.sec2.show-animate .animate {
+    transform: scale(1);
+}
+
+/* Additional animations */
+.sec4 .animate {
+    transform: rotate(30deg);
+}
+
+.sec4.show-animate .animate {
+    transform: rotate(0deg);
+}
+

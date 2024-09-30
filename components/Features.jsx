@@ -8,7 +8,7 @@ export default function Features() {
         id="features"
         className="sec1 show-animate mx-0 mt-2 mb-8  items-center flex flex-col justify-center text-center relative w-full  "
       >
-        <div className="bgimage top-[-200px] left-[0px] w-[100%] h-[130vh] absolute overflow-hidden">
+        <div className="bgimage top-[200px] left-[0px] w-[100%] h-[130vh] absolute overflow-hidden">
           <img
             src="/images/BG01.png"
             alt="BG01 image"
@@ -26,7 +26,7 @@ export default function Features() {
         <img
           src="/images/BG01.png"
           alt="BG01 image"
-          className="  z-[-10] absolute object-cover bg-contain h-[400%] w-[400%] left-[0%]   md:hidden"
+          className="  z-[-10] absolute object-cover bg-contain h-[500vh] w-[400%] left-[0%]   md:hidden"
           // style={{ backgroundImage: "url('/images/BG01.png')",left:300 }}
           // style={{
           //   position: "absolute",
@@ -36,11 +36,11 @@ export default function Features() {
           //   top: "0px",
           // }}
         ></img>
-        <div className="text-6xl font-extrabold flex flex-col md:flex-row md:text-7xl md:space-x-2 font-customB">
+        <div className="animate text-6xl font-extrabold flex flex-col md:flex-row md:text-7xl md:space-x-2 font-customB">
           <p className="animate">Generate</p>
           <p className="animate">& Publish</p>
         </div>
-        <div className="flex py-2">
+        <div className="animate flex py-2">
           <img
             src="/images/Bracket.png"
             alt="Bracket image"

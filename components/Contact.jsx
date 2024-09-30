@@ -3,7 +3,7 @@ import React from "react";
 export default function Contact() {
   return (
     <section id="contact" className="sec6 w-full bg-gray-100">
-      <div className="bg-gray-100 flex justify-around items-center py-8 sm:p-8 md:p-2 my-16 md:px-24">
+      <div className="bg-gray-100 flex justify-around items-center py-8 sm:p-8 md:p-2 my-16 md:px-44">
         <div className="grid md:grid-cols-2 md:w-[100%] gap-2 sm:gap-4 justify-center place-content-center items-center my-12 mx-6">
           <div className="space-y-4">
             <img

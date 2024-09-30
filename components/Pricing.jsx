@@ -13,7 +13,7 @@ export default function Pricing() {
       <img
         src="/images/BG03.png"
         alt="BG03 image"
-        className="animate bg-cover absolute z-[-1]  "
+        className=" bg-cover absolute z-[-1]  "
       />
       <div className="relative flex justify-center text-center ">
         <p className="animate text-4xl font-extrabold sm:text-6xl text-center text-white py-8 font-customB">

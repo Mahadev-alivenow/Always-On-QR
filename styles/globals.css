@@ -68,3 +68,21 @@
     flexGrow: 1;
     marginRight: 20;
   };
+
+  section .animate{
+  opacity: 0;
+  filter: blur(5px);
+  transition: 0.5s;
+}
+
+section.show-animate .animate{
+  opacity: 1;
+  filter: blur(0px);
+  transition: 0.5s;
+}
+.sec2 {
+  transform: translateX(100%);
+}
+.sec2.show-animate {
+  transform: translateX(0);
+}

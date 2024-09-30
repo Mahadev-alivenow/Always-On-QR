@@ -65,8 +65,10 @@ function HomePage() {
         let scrollDistance = window.scrollY;
         let secDistance = sec.offsetTop;
 
-        if (scrollDistance >= secDistance) {
+        if (scrollDistance >= secDistance - 450) {
           sec.classList.add("show-animate");
+        } else {
+          sec.classList.remove("show-animate");
         }
       });
     };
