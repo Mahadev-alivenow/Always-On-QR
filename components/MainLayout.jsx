@@ -105,7 +105,7 @@ function MainLayout({ children }) {
           </ul>
         </nav>
         <div className="hidden md:flex md:justify-between md:space-x-1 md:w-fit md:mx-0 font-customB font-bold ">
-          <button className="text-customBlue  hover:text-white hover:rounded-xl px-6  py-3  text-xl">
+          <button className="text-customBlue  hover:text-neutral-700 hover:rounded-xl px-6  py-3  text-xl">
             Sign In
           </button>
           <button className="text-white bg-customBlue rounded-xl px-6  py-3 text-xl ">
