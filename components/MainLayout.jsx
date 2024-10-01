@@ -57,7 +57,7 @@ function MainLayout({ children }) {
           >
             <a href="#features" className="">
               <li
-                className="w-full md:w-fit hover:bg-white hover:rounded-xl hover:text-black md:hover:rounded-xl  md:hover:text-white md:hover:bg-neutral-700 py-3 px-3  "
+                className="w-full md:w-fit hover:bg-customBlue hover:rounded-xl hover:text-black md:hover:rounded-xl  md:hover:text-white md:hover:bg-customBlue py-3 px-3  "
                 onClick={handleMenuClick}
               >
                 Features
@@ -65,7 +65,7 @@ function MainLayout({ children }) {
             </a>
             <a href="#pricing" className="">
               <li
-                className="w-full md:w-fit hover:bg-white hover:rounded-xl hover:text-black md:hover:rounded-xl  md:hover:text-white md:hover:bg-neutral-700 py-3 px-3 text-xl "
+                className="w-full md:w-fit hover:bg-customBlue hover:rounded-xl hover:text-black md:hover:rounded-xl  md:hover:text-white md:hover:bg-customBlue py-3 px-3 text-xl "
                 onClick={handleMenuClick}
               >
                 Pricing
@@ -73,7 +73,7 @@ function MainLayout({ children }) {
             </a>
             <a href="#contact" className="">
               <li
-                className="w-full md:w-fit hover:bg-white hover:rounded-xl hover:text-black md:hover:rounded-xl  md:hover:text-white md:hover:bg-neutral-700 py-3 px-3 text-xl "
+                className="w-full md:w-fit hover:bg-customBlue hover:rounded-xl hover:text-black md:hover:rounded-xl  md:hover:text-white md:hover:bg-customBlue py-3 px-3 text-xl "
                 onClick={handleMenuClick}
               >
                 Contact Us

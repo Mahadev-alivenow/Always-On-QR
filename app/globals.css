@@ -110,33 +110,73 @@ section.show-animate .animate {
 .sec4.show-animate .animate {
     transform: rotate(0deg);
 }
-/* 
-ul li a{
-  color: rgb(20, 1, 203);
-  transition: all .5s;
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
 }
-a::before{
-  content: '';
+
+ul a li {
+  /* color: #272727; */
+  /* font-size: 20px; */
+  /* text-decoration: none; */
+  /* text-transform: uppercase; */
+  padding: 5px 10px;
+  margin: 0px 10px;
+  position: relative;
+  transition: all .5s
+}
+
+li:hover {
   background-color: rgb(20, 1, 203);
+  color:white;
+}
+
+li:before {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  width: 12px;
+  height: 12px;
   border: 3px solid rgb(20, 1, 203);
   border-width: 0 0 3px 3px;
-  transition: all 0.3s;
+  opacity: 0;
+  transition: all 0.3s
 }
-a:hover::before{
+
+li:hover:before {
   opacity: 1;
   bottom: -8px;
   left: -8px;
 }
-a::after{
-  content: '';
-  background-color: rgb(20, 1, 203);
+
+li:after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 12px;
+  height: 12px;
   border: 3px solid rgb(20, 1, 203);
   border-width: 3px 3px 0 0;
   opacity: 0;
   transition: all 0.3s;
 }
-a:hover::before{
+
+li:hover:after {
   opacity: 1;
-  right: -8px;
   top: -8px;
-} */
+  right: -8px;
+}
+
+
+/* Flex column layout for small screens */
+@media (max-width: 640px) {
+  ul {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on small screens */
+  }
+}
