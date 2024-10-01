@@ -11,8 +11,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Add faviconsss */}
-        <link rel="icon" href="/images/FavIcon.png" type="image/png" />
+        {/* Add favicon.ico for cross-browser compatibility */}
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        {/* Optionally, include PNG for Chrome or other browsers */}
+        <link
+          rel="icon"
+          href="/images/FavIcon.png"
+          type="image/png"
+          sizes="32x32"
+        />
         <meta name="description" content={metadata.description} />
         <title>{metadata.title}</title>
       </head>
