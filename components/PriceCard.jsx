@@ -36,38 +36,38 @@ export default function PriceCard({
     //   className="flex overflow-x-scroll w-full scrollbar-hide" // Add your custom scrollbar styles if necessary
     //   style={{ scrollBehavior: "smooth" }} // Smooth scrolling behavior
     // >
-      <div
-        className=" rounded-lg  backdrop-filter bg-white/10 w-[250px]  shadow-md backdrop-blur-md m-4 p-6"
-        style={{
-          border: "2px solid rgba(255, 255, 255, .8)", // White stroke
-          boxShadow: "inset 0 0 20px rgba(255, 255, 255, .6)", // Inner white glow
-        }}
-      >
-        <div className="flex-col text-white  text-left font-customR   ">
-          <img src={image} alt="placeholder image" width={70} />
-          <h2 className="text-5xl font-bold font-customB">{plans}</h2>
-          <div className="text-xl w-[80%] font-customR">{usage}</div>
-          <div className="flex items-end">
-            <p
-              className={`text-5xl font-extrabold font-customL ${
-                price === "0" ? "pt-4" : "pt-11"
-              }`}
-            >
-              ${price}
-            </p>
-            <p className="text-xs font-light font-customL">
-              {price === "0" ? "" : "/Month"}
-            </p>
-          </div>
-          <button
-            className={`${
-              defaultHover ? "bg-white text-customBlue" : "none"
-            } border-spacing-2 border hover:text-customBlue font-customL text-2xl rounded-lg  mb-4 w-full mt-4 py-2`}
+    <div
+      className="animate rounded-lg  backdrop-filter bg-white/10 w-[250px]  shadow-md backdrop-blur-md m-4 p-6"
+      style={{
+        border: "2px solid rgba(255, 255, 255, .8)", // White stroke
+        boxShadow: "inset 0 0 20px rgba(255, 255, 255, .6)", // Inner white glow
+      }}
+    >
+      <div className="flex-col text-white  text-left font-customR   ">
+        <img src={image} alt="placeholder image" width={70} />
+        <h2 className="text-5xl font-bold font-customB">{plans}</h2>
+        <div className="text-xl w-[80%] font-customR">{usage}</div>
+        <div className="flex items-end">
+          <p
+            className={`text-5xl font-extrabold font-customL ${
+              price === "0" ? "pt-4" : "pt-11"
+            }`}
           >
-            {buttonText}
-          </button>
+            ${price}
+          </p>
+          <p className="text-xs font-light font-customL">
+            {price === "0" ? "" : "/Month"}
+          </p>
         </div>
+        <button
+          className={`${
+            defaultHover ? "bg-white text-customBlue" : "none"
+          } border-spacing-2 border hover:text-customBlue font-customL text-2xl rounded-lg  mb-4 w-full mt-4 py-2`}
+        >
+          {buttonText}
+        </button>
       </div>
+    </div>
     // </div>
   );
 }

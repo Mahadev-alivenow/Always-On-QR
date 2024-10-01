@@ -10,7 +10,7 @@ export default function PriceCardSlider({
 }) {
   return (
     <div
-      className=" rounded-lg  backdrop-filter bg-white/10 w-full shadow-md backdrop-blur-md"
+      className=" animate rounded-lg  backdrop-filter bg-white/10 w-full shadow-md backdrop-blur-md"
       style={{
         border: "2px solid rgba(255, 255, 255, .7)", // White stroke
         boxShadow: "inset 0 0 20px rgba(255, 255, 255, .9)", // Inner white glow
@@ -30,10 +30,14 @@ export default function PriceCardSlider({
           >
             ${price}
           </p>
-          <p className="text-xs font-light font-customL">{price === "0" ? "" : "/Month"}</p>
+          <p className="text-xs font-light font-customL">
+            {price === "0" ? "" : "/Month"}
+          </p>
         </div>
         <button
-          className={`${defaultHover ? "bg-white text-customBlue" : "none"} hover:bg-white border-spacing-2 border py-3 hover:text-blue-800  text-2xl rounded-lg w-[100%] font-customL`}
+          className={`${
+            defaultHover ? "bg-white text-customBlue" : "none"
+          } hover:bg-white border-spacing-2 border py-3 hover:text-blue-800  text-2xl rounded-lg w-[100%] font-customL`}
         >
           {buttonText}
         </button>

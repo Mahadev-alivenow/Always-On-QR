@@ -110,4 +110,33 @@ section.show-animate .animate {
 .sec4.show-animate .animate {
     transform: rotate(0deg);
 }
-
+/* 
+ul li a{
+  color: rgb(20, 1, 203);
+  transition: all .5s;
+}
+a::before{
+  content: '';
+  background-color: rgb(20, 1, 203);
+  border: 3px solid rgb(20, 1, 203);
+  border-width: 0 0 3px 3px;
+  transition: all 0.3s;
+}
+a:hover::before{
+  opacity: 1;
+  bottom: -8px;
+  left: -8px;
+}
+a::after{
+  content: '';
+  background-color: rgb(20, 1, 203);
+  border: 3px solid rgb(20, 1, 203);
+  border-width: 3px 3px 0 0;
+  opacity: 0;
+  transition: all 0.3s;
+}
+a:hover::before{
+  opacity: 1;
+  right: -8px;
+  top: -8px;
+} */

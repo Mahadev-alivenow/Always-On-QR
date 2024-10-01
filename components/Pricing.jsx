@@ -20,7 +20,7 @@ export default function Pricing() {
           Plans & Prices
         </p>
       </div>
-      <div className="animate slider-card  md:hidden">
+      <div className=" slider-card  md:hidden">
         <PriceCard
           image="/images/Icon01.png"
           plans="Starter"
@@ -46,7 +46,7 @@ export default function Pricing() {
           defaultHover={false}
         />
       </div>
-      <div className="animate hidden md:flex space-x-6">
+      <div className=" hidden md:flex space-x-6">
         <PriceCardSlider
           image="/images/Icon01.png"
           plans="Starter"
